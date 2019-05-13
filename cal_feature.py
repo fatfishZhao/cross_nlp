@@ -1,14 +1,9 @@
 import pandas as pd
-import re
 import pickle
-import nltk
-from nltk.corpus import treebank
-from nltk.parse.stanford import StanfordParser, StanfordDependencyParser
-import os
 from nltk.text import TextCollection
 from features import feature_cal
 import tqdm
-import numpy as np
+
 
 
 
@@ -46,6 +41,9 @@ if __name__ == '__main__':
             words_list = [str(eye_df['WORD'][i])]
             sentence_id = word2s[eye_df['WORD_ID'][i]]
             # print(np.array(tmp_features))
+        elif i==eye_df.shape[0]-1:
+            words_list.append(str(eye_df['WORD'][i]))
+            tmp_features = feature_ob.get_feature(words_list)
         else:
             words_list.append(str(eye_df['WORD'][i]))
 
