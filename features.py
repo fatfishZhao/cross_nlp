@@ -54,7 +54,7 @@ class feature_cal():
         fea_start_capital = [word.istitle() for word in raw_words_list]
         fea_capital_only = [word.isupper() for word in raw_words_list]
         fea_have_num = [True if re.match(r'[+-]?\d+$', word) else False for word in raw_words_list]
-        fea_abbre = [word.isupper and len(word)>=2 for word in raw_words_list]
+        fea_abbre = [word.isupper() and len(word)>=2 for word in raw_words_list]
 
         res = self.dep_parser.parse(words_list)
         deps = res.__next__()

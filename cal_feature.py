@@ -2,6 +2,7 @@ import pandas as pd
 import pickle
 from nltk.text import TextCollection
 from features import feature_cal
+from nltk.corpus import wordnet as wn
 import tqdm
 
 
@@ -37,7 +38,7 @@ if __name__ == '__main__':
     words_list = []; sentence_id = '1-1'
     for i in tqdm.tqdm(range(eye_df.shape[0])):
         if eye_df['WORD_ID'][i] in word2s.keys() and word2s[eye_df['WORD_ID'][i]]!=sentence_id:
-            tmp_features = feature_ob.get_feature(words_list)
+            tmp_features = feature_ob.get_feature(words_list,wn)
             words_list = [str(eye_df['WORD'][i])]
             sentence_id = word2s[eye_df['WORD_ID'][i]]
             # print(np.array(tmp_features))
