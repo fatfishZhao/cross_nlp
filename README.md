@@ -1,4 +1,5 @@
 # cross_nlp
+paper:A Cognition Based Attention Model for Sentiment Analysis
 ## requirement
 python 3  
 nltk  
