@@ -26,5 +26,5 @@ for people_id in people_list:
     scores = cross_validation.cross_val_score(regr, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
     # print(people_id+': ', scores.mean())
     # print('std^2 is ', data_Y.std()**2)
-    print('regression/std^2:', np.sqrt(-scores.mean())/data_Y.std())
+    print('rmse/std:', np.sqrt(-scores.mean())/data_Y.std())
     score_dict.update({people_id:scores.mean()})
