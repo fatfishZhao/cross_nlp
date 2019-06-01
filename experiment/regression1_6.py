@@ -22,8 +22,11 @@ def normalize_time(old_df):
         new_df.loc[list(new_df[new_df['PP_NR']==one_people].index), ['WORD_TOTAL_READING_TIME']]=normalize_time
         # new_df[new_df['PP_NR']==one_people]['WORD_TOTAL_READING_TIME']=normalize_time
     return new_df
-def normalize_fea(old_df):
-
+def normalize_fea(old_df, fea_num):
+    new_fea = preprocessing.scale(old_df.iloc[:, -fea_num:].values, axis=0)
+    new_df = old_df.copy()
+    new_df.iloc[:, -fea_num:] = new_fea
+    return new_df
 
 def load_data(fea_path = '../feature.pkl'):
     with open(fea_path, 'rb') as f:
@@ -31,6 +34,7 @@ def load_data(fea_path = '../feature.pkl'):
     fea_df = fea_df.replace('.', 0)
     fea_df = fea_df.dropna()
     fea_df = normalize_time(old_df=fea_df)
+    fea_df = normalize_fea(old_df=fea_df, fea_num=9)
 
     fea_df = fea_df[['WORD_TOTAL_READING_TIME','WORD']+list(fea_df.columns)[-9:]]
 
@@ -41,7 +45,7 @@ data_X, data_Y = load_data('../feature.pkl')
 regr = linear_model.LinearRegression()
 linear_scores = cross_validation.cross_val_score(regr, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
 print('Linear Regression score:', np.sqrt(-linear_scores.mean()))
-ridge = linear_model.Ridge(alpha=100000)
+ridge = linear_model.Ridge(alpha=0.1)
 ridge_scores = cross_validation.cross_val_score(ridge, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
 print('Ridge Regression score:', np.sqrt(-ridge_scores.mean()))
 print(data_Y.std())
