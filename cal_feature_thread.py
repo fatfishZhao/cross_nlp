@@ -41,9 +41,11 @@ if __name__ == '__main__':
     # print(wn.__class__)  # <class 'nltk.corpus.reader.wordnet.WordNetCorpusReader'>
 
     # read data as dataframe format from pkl
+    debug = False
     with open('MonoligualReadingData.pkl', 'rb') as f:
         eye_df = pd.DataFrame(pickle.load(f))
-
+        if debug:
+            eye_df = eye_df.iloc[0:1000, :]
     with open('EnglighMaterial_all.pkl', 'rb') as f:
         english_material_all_df = pd.DataFrame(pickle.load(f))
     with open('EnglighMaterial_sentence.pkl', 'rb') as f:
@@ -92,26 +94,33 @@ if __name__ == '__main__':
     # 等待队列清空
     while not workQueue.empty():
         pass
+    import time
+    time.sleep(10)
     # 等待所有线程完成
     for t in threads:
         t.join(0.01)
     features_df = pd.DataFrame(
-        columns=['fea_num_letter', 'fea_start_capital', 'fea_capital_only', 'fea_have_num', 'fea_abbre',
+        columns=['fea_num_letter', 'fea_start_capital', 'fea_capital_only', 'fea_have_num', 'fea_abbre', 'fea_critical_entity',
                  'fea_domi_nodes', 'fea_max_d',
-                 'fea_idf'])
+                 'fea_idf', 'fea_complexity'])
     new_df = pd.concat([eye_df, features_df], axis=1)
     # insert data to the dataframe
-    for one_list in feature_list:
+    print('start inserting to dataframe')
+    all_feature_array = np.zeros((new_df.shape[0], len(features_df.columns)))
+    for one_list in tqdm.tqdm(feature_list):
         for one_sentence in one_list:
             end_index = one_sentence[0]
             feature_array = np.array(one_sentence[1]).T
             s_length = feature_array.shape[0]
             fea_num = feature_array.shape[1]
-            new_df.iloc[end_index-s_length:end_index, eye_df.shape[1]:eye_df.shape[1]+fea_num] = feature_array
+            all_feature_array[end_index - s_length: end_index, : fea_num] = feature_array
+            # new_df.iloc[end_index-s_length:end_index, eye_df.shape[1]:eye_df.shape[1]+fea_num] = feature_array
+    new_df.iloc[:, eye_df.shape[1]:eye_df.shape[1]+len(features_df.columns)] = all_feature_array
     new_df['fea_num_wordnet'] = pd.Series(fea_num_wordnet)
-    with open('feature.pkl', 'wb') as f:
+    with open('all_feature.pkl', 'wb') as f:
         pickle.dump(new_df, f)
     print(new_df.info())
+    print('save dataframe over...........')
 
 
 

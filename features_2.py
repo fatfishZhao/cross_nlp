@@ -79,6 +79,9 @@ class feature_cal():
         fea_abbre = [word.isupper() and len(word)>=2 for word in raw_words_list]
         fea_entity_critical = cal_entity_critical(self.nlp, words_list)
 
+        # use nlp method
+
+        doc = self.nlp()
         res = self.dep_parser.parse(words_list)
         deps = res.__next__()
         traverse(deps, 0)  # 0 is always the root node
