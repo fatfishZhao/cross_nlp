@@ -4,6 +4,7 @@ from sklearn import datasets, linear_model, cross_validation
 import pickle
 import numpy as np
 from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib.pyplot as plt
 
 
 import numpy as np
@@ -24,3 +25,6 @@ ridge = linear_model.Ridge(alpha=100000)
 scores = cross_validation.cross_val_score(ridge, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
 print('Ridge Regression score:', np.sqrt(-scores.mean()))
 print(data_Y.std())
+print(data_Y.mean())
+print(data_Y.max())
+

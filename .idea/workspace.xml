@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d02b8f3-5260-4ed0-8d1c-faa1e08377c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/regression1_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/try_RNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment/train_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment/visualize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds.py" beforeDir="false" afterPath="$PROJECT_DIR$/ds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/regression1_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/regression1_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/regression1_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/regression1_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/regression1_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/regression1_7.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +19,14 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/cross_nlp$add_FK_grade.coverage" NAME="add_FK_grade Coverage Results" MODIFIED="1558754276174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cross_nlp$regression1_3.coverage" NAME="regression1_3 Coverage Results" MODIFIED="1558754543595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
-    <SUITE FILE_PATH="coverage/cross_nlp$regression1_6.coverage" NAME="regression1_6 Coverage Results" MODIFIED="1559381994787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
+    <SUITE FILE_PATH="coverage/cross_nlp$regression1_6.coverage" NAME="regression1_6 Coverage Results" MODIFIED="1559438823258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$try_dep_2.coverage" NAME="try_dep_2 Coverage Results" MODIFIED="1559292219743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/feature" />
     <SUITE FILE_PATH="coverage/cross_nlp$try_max_d.coverage" NAME="try_max_d Coverage Results" MODIFIED="1557121695818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cross_nlp$regression1_2.coverage" NAME="regression1_2 Coverage Results" MODIFIED="1558630090304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$regression.coverage" NAME="regression1_1 Coverage Results" MODIFIED="1557799000944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
-    <SUITE FILE_PATH="coverage/cross_nlp$try_RNN.coverage" NAME="try_RNN Coverage Results" MODIFIED="1559383050374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
+    <SUITE FILE_PATH="coverage/cross_nlp$try_RNN.coverage" NAME="try_RNN Coverage Results" MODIFIED="1559460645074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$add_entity_critical.coverage" NAME="add_entity_critical Coverage Results" MODIFIED="1559286895469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cross_nlp$regression1_7.coverage" NAME="regression1_7 Coverage Results" MODIFIED="1559482455499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$convert_data_df.coverage" NAME="convert_data_df Coverage Results" MODIFIED="1557019054774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cross_nlp$cal_feature_thread.coverage" NAME="cal_feature_thread Coverage Results" MODIFIED="1559380806832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cross_nlp$cal_feature.coverage" NAME="cal_feature Coverage Results" MODIFIED="1558663252854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -33,7 +36,8 @@
     <SUITE FILE_PATH="coverage/cross_nlp$regression1_4.coverage" NAME="regression1_4 Coverage Results" MODIFIED="1558755181907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$try_parser.coverage" NAME="try_parser Coverage Results" MODIFIED="1556871258751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/cross_nlp$regression1_5.coverage" NAME="regression1_5 Coverage Results" MODIFIED="1558755218115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
-    <SUITE FILE_PATH="coverage/cross_nlp$regression1_1.coverage" NAME="regression1_1 Coverage Results" MODIFIED="1558753907102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
+    <SUITE FILE_PATH="coverage/cross_nlp$regression1_1.coverage" NAME="regression1_1 Coverage Results" MODIFIED="1559438926048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
+    <SUITE FILE_PATH="coverage/cross_nlp$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1559479585641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment" />
     <SUITE FILE_PATH="coverage/cross_nlp$good_thread.coverage" NAME="good_thread Coverage Results" MODIFIED="1557478275324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cross_nlp$try_wordnet.coverage" NAME="try_wordnet Coverage Results" MODIFIED="1557123016514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/feature" />
   </component>
@@ -64,28 +68,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="63" />
+          <entry key="py" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="63" />
+          <entry key="Python" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1242" />
+          <entry key="Python Console" value="1262" />
           <entry key="dummy" value="13" />
           <entry key="md" value="363" />
-          <entry key="py" value="11010" />
+          <entry key="py" value="14374" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="363" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="12252" />
+          <entry key="Python" value="15636" />
         </counts>
       </usages-collector>
     </session>
@@ -95,39 +99,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cal_feature_thread.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment/regression1_7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="59" selection-end-column="105" />
-              <folding>
-                <element signature="e#43#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cal_feature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1558663252801" expanded="true" signature="156:162" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="357">
+              <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#1582#1738#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="1673" selection-start-line="1673" selection-end-line="1673" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="335" selection-start-line="335" selection-end-line="335" />
             </state>
           </provider>
         </entry>
@@ -135,58 +133,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="454">
+              <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1559399207221" expanded="true" signature="210:1371" ph="..." />
+                <marker date="1559481696444" expanded="true" signature="210:1458" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/experiment/regression1_7.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment/regression1_5.py">
+        <entry file="file://$PROJECT_DIR$/experiment/regression1_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="238">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1558632484065" expanded="true" signature="222:778" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment/regression1_6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1559381994577" expanded="true" signature="903:1066" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add_FK_grade.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="62" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment/try_RNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="63" selection-start-line="63" selection-end-line="64" />
+            <state relative-caret-position="168">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#185#197#0" expanded="true" />
               </folding>
@@ -205,10 +168,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/pandas/core/indexing.py">
+        <entry file="file://$PROJECT_DIR$/experiment/train_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="1723" selection-start-line="1723" selection-end-line="1723" />
+            <state relative-caret-position="168">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#13#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment/visualize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment/regression1_6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1559438823063" expanded="true" signature="903:1066" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/feature/try_dep_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -254,7 +257,6 @@
         <option value="$PROJECT_DIR$/add_FK_grade.py" />
         <option value="$PROJECT_DIR$/experiment/regression1_5.py" />
         <option value="$PROJECT_DIR$/cal_feature.py" />
-        <option value="$PROJECT_DIR$/experiment/regression1_1.py" />
         <option value="$PROJECT_DIR$/experiment/regression1_3.py" />
         <option value="$PROJECT_DIR$/experiment/regression1_4.py" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -263,10 +265,13 @@
         <option value="$PROJECT_DIR$/features_2.py" />
         <option value="$PROJECT_DIR$/features.py" />
         <option value="$PROJECT_DIR$/cal_feature_thread.py" />
-        <option value="$PROJECT_DIR$/experiment/regression1_6.py" />
         <option value="$PROJECT_DIR$/experiment/try_RNN.py" />
-        <option value="$PROJECT_DIR$/experiment/regression1_7.py" />
+        <option value="$PROJECT_DIR$/experiment/regression1_6.py" />
+        <option value="$PROJECT_DIR$/experiment/regression1_1.py" />
+        <option value="$PROJECT_DIR$/experiment/visualize.py" />
+        <option value="$PROJECT_DIR$/experiment/train_util.py" />
         <option value="$PROJECT_DIR$/ds.py" />
+        <option value="$PROJECT_DIR$/experiment/regression1_7.py" />
       </list>
     </option>
   </component>
@@ -333,8 +338,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.try_RNN">
-    <configuration name="add_entity_critical" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.regression1_7">
+    <configuration name="regression1_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cross_nlp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,34 +347,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/add_entity_critical.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cal_feature_thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cross_nlp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cal_feature_thread.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment/regression1_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -400,6 +383,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="regression1_7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cross_nlp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment/regression1_7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="try_RNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cross_nlp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -422,7 +427,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="try_dep_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cross_nlp" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -430,12 +435,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils/feature" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/feature/try_dep_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment/visualize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -445,19 +450,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.add_entity_critical" />
-      <item itemvalue="Python.try_dep_2" />
-      <item itemvalue="Python.cal_feature_thread" />
       <item itemvalue="Python.regression1_6" />
       <item itemvalue="Python.try_RNN" />
+      <item itemvalue="Python.regression1_7" />
+      <item itemvalue="Python.regression1_1" />
+      <item itemvalue="Python.visualize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regression1_7" />
+        <item itemvalue="Python.visualize" />
         <item itemvalue="Python.try_RNN" />
+        <item itemvalue="Python.regression1_1" />
         <item itemvalue="Python.regression1_6" />
-        <item itemvalue="Python.cal_feature_thread" />
-        <item itemvalue="Python.try_dep_2" />
-        <item itemvalue="Python.add_entity_critical" />
       </list>
     </recent_temporary>
   </component>
@@ -483,21 +488,21 @@
       <window_info id="Favorites" order="2" sideWeight="0.503268" side_tool="true" weight="0.13142239" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49784946" visible="true" weight="0.42207792" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49784946" weight="0.44372293" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49758196" visible="true" weight="0.27380952" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49758196" weight="0.3961039" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5016129" side_tool="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50241804" side_tool="true" weight="0.3961039" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32869378" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4983871" weight="0.3283582" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4983871" weight="0.32792208" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" auto_hide="true" x="655" y="328" width="699" height="542" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.37580645" />
+      <window_info anchor="right" auto_hide="true" x="624" y="538" width="1157" height="542" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.37580645" />
       <window_info anchor="right" id="Database" order="4" weight="0.3295699" />
     </layout>
   </component>
@@ -547,7 +552,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiment/regression1_1.py</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -562,7 +567,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiment/regression1_1.py</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -597,8 +602,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiment/try_RNN.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="47" />
+          <line>46</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/experiment/visualize.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/experiment/train_util.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -614,52 +629,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>new_df.iloc[:, -9:] = new_fea</expression-string>
+        <expression-string>labels[0,0].cpu().numpy()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new_fea[0,:].mean()</expression-string>
+        <expression-string>labels[0,0].cpu()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new_df[['WORD']+list(new_df.columns[56:])]</expression-string>
+        <expression-string>labels[0,0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[56:])</expression-string>
+        <expression-string>labels[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[50:])</expression-string>
+        <expression-string>labels</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[50&quot;&quot;])</expression-string>
+        <expression-string>outputs.squeeze().data==outputs.squeeze()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[60:])</expression-string>
+        <expression-string>outputs.squeeze().data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[40:])</expression-string>
+        <expression-string>outputs.squeeze().data.cpu().numpy()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(new_df.columns[10:])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>list(new_df.columns[:])</expression-string>
+        <expression-string>outputs.squeeze().data.cpu()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -820,16 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/regression1_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -881,16 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/regression1_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/feature/try_dependence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -898,16 +888,6 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <marker date="1557022750029" expanded="true" signature="165:167" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/feature/try_dep_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,9 +929,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiment/regression1_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
+        <state relative-caret-position="221">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -960,24 +950,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment/regression1_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1559381994577" expanded="true" signature="903:1066" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cal_feature.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="40">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1558663252801" expanded="true" signature="156:162" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_breakpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cal_feature_thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="83" column="53" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="53" />
+          <folding>
+            <element signature="e#43#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -992,51 +995,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features_2.py">
+    <entry file="file://$PROJECT_DIR$/experiment/regression1_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="192">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="86" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cal_feature_thread.py">
+    <entry file="file://$PROJECT_DIR$/experiment/regression1_6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="59" selection-end-column="105" />
+        <state relative-caret-position="335">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#43#55#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1559438823063" expanded="true" signature="903:1066" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/feature/try_dep_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment/try_RNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="63" selection-start-line="63" selection-end-line="64" />
+        <state relative-caret-position="168">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#185#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///data2/zyx/software/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="1673" selection-start-line="1673" selection-end-line="1673" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/regression1_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="454">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1559399207221" expanded="true" signature="210:1371" ph="..." />
+            <marker date="1559481696444" expanded="true" signature="210:1458" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/train_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#13#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment/regression1_7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="357">
+          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1582#1738#0" />
+          </folding>
         </state>
       </provider>
     </entry>
