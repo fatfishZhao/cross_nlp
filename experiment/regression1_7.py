@@ -79,9 +79,9 @@ trainlog(logfile)
 dataset = {}
 dataset['train'], dataset['val'] = get_train_val(data_df, -feature_num, english_matrial)
 dataloader={}
-dataloader['train']=torch.utils.data.DataLoader(dataset['train'], batch_size=16,
+dataloader['train']=torch.utils.data.DataLoader(dataset['train'], batch_size=128,
                                                shuffle=True, num_workers=4,collate_fn=collate_fn)
-dataloader['val']=torch.utils.data.DataLoader(dataset['val'], batch_size=16,
+dataloader['val']=torch.utils.data.DataLoader(dataset['val'], batch_size=128,
                                                shuffle=True, num_workers=4,collate_fn=collate_fn)
 
 print(data_df.info())
