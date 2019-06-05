@@ -35,4 +35,4 @@ for train_text_i, test_text_i in kf.split(text_ids):
     regr.fit(train_X, train_Y)
     predict_Y = regr.predict(test_X)
     rmse = np.sqrt(mean_squared_error(test_Y, predict_Y))
-    print("rmse is %f, Y std is %f"%(rmse, test_Y.std()))
+    print("rmse is %f, Y std is %f, Y mean is %f"%(rmse, test_Y.std(), test_Y.mean()))
