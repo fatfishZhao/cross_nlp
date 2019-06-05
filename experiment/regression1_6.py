@@ -28,7 +28,7 @@ def normalize_fea(old_df, fea_num):
     new_df.iloc[:, -fea_num:] = new_fea
     return new_df
 
-def load_data(fea_path = '../feature.pkl'):
+def load_data(fea_path = '../data/ECGO/feature.pkl'):
     with open(fea_path, 'rb') as f:
         fea_df = pd.DataFrame(pickle.load(f))
     fea_df = fea_df.replace('.', 0)
@@ -41,7 +41,7 @@ def load_data(fea_path = '../feature.pkl'):
     data_Y = fea_df.iloc[:,0].values
     data_X = fea_df.iloc[:,2:].values
     return data_X, data_Y
-data_X, data_Y = load_data('../feature.pkl')
+data_X, data_Y = load_data('../data/ECGO/feature.pkl')
 regr = linear_model.LinearRegression()
 linear_scores = cross_validation.cross_val_score(regr, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
 print('Linear Regression score:', np.sqrt(-linear_scores.mean()))

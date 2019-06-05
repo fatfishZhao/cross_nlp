@@ -21,5 +21,5 @@ regression1_5:
 repeat 1_3, but use the percentage of reading time for each person for regression target  
 regression1_6:  
 repeat 1_3, but nomalize the features first
-regression1_7:
+regression1_7:  
 use RNN to regress 

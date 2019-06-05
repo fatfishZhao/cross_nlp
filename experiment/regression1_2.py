@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 import numpy as np
-def load_data(fea_path = '../feature.pkl'):
+def load_data(fea_path = '../data/ECGO/feature.pkl'):
     with open(fea_path, 'rb') as f:
         fea_df = pd.DataFrame(pickle.load(f))
     fea_df = fea_df[['PP_NR', 'WORD_TOTAL_READING_TIME']+list(fea_df.columns)[-9:]]
@@ -14,7 +14,7 @@ def load_data(fea_path = '../feature.pkl'):
     fea_df = fea_df.dropna()
     return fea_df
 
-fea_data = load_data('../feature.pkl')
+fea_data = load_data('../data/ECGO/feature.pkl')
 people_list = list(fea_data.drop_duplicates(subset='PP_NR', inplace = False)['PP_NR'])
 score_dict = {}
 for people_id in people_list:

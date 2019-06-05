@@ -29,7 +29,7 @@ def load_data(data_df, fea_num, word2s):
 
     return train_X, train_Y, test_X, test_Y
 # 映射word_id -> sentence_id
-def get_word2sen(data_df, material_file='../data/EnglighMaterial_all.pkl', save_file = '../data/word2sen.pkl'):
+def get_word2sen(data_df, material_file='../data/ECGO/EnglighMaterial_all.pkl', save_file = '../data/ECGO/word2sen.pkl'):
     if os.path.exists(save_file):
         with open(save_file, 'rb') as f:
             word2s = dict(pickle.load(f))
@@ -48,7 +48,7 @@ def get_word2sen(data_df, material_file='../data/EnglighMaterial_all.pkl', save_
         with open(save_file, 'wb') as f:
             pickle.dump(word2s, f)
     return word2s
-with open('../data/all_feature.pkl', 'rb') as f:
+with open('../data/ECGO/all_feature.pkl', 'rb') as f:
     data_df = pd.DataFrame(pickle.load(f))
 word2sen = get_word2sen(data_df)
 

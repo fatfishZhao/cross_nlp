@@ -48,7 +48,7 @@ def normalize_fea(old_df, fea_num):
     new_df.iloc[:, -fea_num:] = new_fea
     return new_df
 
-def load_data(fea_path = '../feature.pkl', fea_num=10):
+def load_data(fea_path = '../data/ECGO/feature.pkl', fea_num=10):
     with open(fea_path, 'rb') as f:
         fea_df = pd.DataFrame(pickle.load(f))
     fea_df = fea_df.replace('.', 0)
@@ -65,7 +65,7 @@ def load_data(fea_path = '../feature.pkl', fea_num=10):
 # init dataset
 feature_num = 11
 DEBUG = False
-data_df = load_data('../all_feature.pkl', feature_num)
+data_df = load_data('../data/ECGO/all_feature.pkl', feature_num)
 if DEBUG:
     data_df = data_df.iloc[0:1000, :]
 with open('../EnglighMaterial_all.pkl', 'rb') as f:

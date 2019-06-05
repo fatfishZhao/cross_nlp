@@ -1,6 +1,7 @@
 import pandas as pd
 # 线性回归
-from sklearn import datasets, linear_model, cross_validation
+from sklearn import datasets, linear_model
+from sklearn.model_selection import cross_val_score, KFold
 import pickle
 import numpy as np
 from sklearn.metrics import mean_squared_error, r2_score
@@ -12,22 +13,26 @@ def normalize_fea(old_df, fea_num):
     new_df = old_df.copy()
     new_df.iloc[:, -fea_num:] = new_fea
     return new_df
-def load_data(fea_path = '../feature_FK.pkl', fea_num=11):
-    with open(fea_path, 'rb') as f:
-        fea_df = pd.DataFrame(pickle.load(f))
-    fea_df = fea_df[['fixation_duration','word']+list(fea_df.columns)[-fea_num:]]
+def load_data(fea_df, fea_num=11):
+    fea_df = fea_df[['fixation_duration','word', 'text_id']+list(fea_df.columns)[-fea_num:]]
     fea_df = fea_df.replace('.', 0)
     fea_df = fea_df.dropna()
     fea_df = normalize_fea(fea_df, fea_num)
-    data_Y = fea_df.iloc[:,0].values
-    data_X = fea_df.iloc[:,2:].values
-    return data_X, data_Y
-data_X, data_Y = load_data('../data/Mishra/all_feature.pkl', fea_num=11)
+    return fea_df
+with open('../data/Mishra/all_feature.pkl', 'rb') as f:
+    fea_df = pd.DataFrame(pickle.load(f))
+fea_num=11
+fea_df = load_data(fea_df, fea_num)
 regr = linear_model.LinearRegression()
-scores = cross_validation.cross_val_score(regr, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
-print('Linear Regression score:', np.sqrt(-scores.mean()))
-ridge = linear_model.Ridge(alpha=1)
-scores = cross_validation.cross_val_score(ridge, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
-print('Ridge Regression score:', np.sqrt(-scores.mean()))
-print(data_Y.std())
-print(np.sqrt(-scores.mean())/data_Y.std())
+kf = KFold(n_splits=10, shuffle=True, random_state=233)
+text_ids = list(set(fea_df['text_id']))
+for train_text_i, test_text_i in kf.split(text_ids):
+    train_index = [text_id in train_text_i for text_id in fea_df['text_id']]
+    test_index = [text_id in test_text_i for text_id in fea_df['text_id']]
+    train_df = fea_df[train_index]; test_df = fea_df[test_index]
+    train_X = train_df.iloc[:, -fea_num:].values; train_Y = train_df.iloc[:,0].values
+    test_X = test_df.iloc[:, -fea_num:].values; test_Y = test_df.iloc[:,0].values
+    regr.fit(train_X, train_Y)
+    predict_Y = regr.predict(test_X)
+    rmse = np.sqrt(mean_squared_error(test_Y, predict_Y))
+    print("rmse is %f, Y std is %f"%(rmse, test_Y.std()))
