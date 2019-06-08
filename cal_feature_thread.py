@@ -117,7 +117,7 @@ if __name__ == '__main__':
             # new_df.iloc[end_index-s_length:end_index, eye_df.shape[1]:eye_df.shape[1]+fea_num] = feature_array
     new_df.iloc[:, eye_df.shape[1]:eye_df.shape[1]+len(features_df.columns)] = all_feature_array
     new_df['fea_num_wordnet'] = pd.Series(fea_num_wordnet)
-    with open('all_feature.pkl', 'wb') as f:
+    with open('./data/EGCO/all_feature.pkl', 'wb') as f:
         pickle.dump(new_df, f)
     print(new_df.info())
     print('save dataframe over...........')

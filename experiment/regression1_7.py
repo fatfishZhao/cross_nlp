@@ -8,7 +8,7 @@ from ds import get_train_val, collate_fn
 from experiment.train_util import train, trainlog
 from torch.optim import lr_scheduler
 import time
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 # define net
 class RNN(nn.Module):
     def __init__(self, INPUT_SIZE):
@@ -65,10 +65,10 @@ def load_data(fea_path = '../data/ECGO/feature.pkl', fea_num=10):
 # init dataset
 feature_num = 11
 DEBUG = False
-data_df = load_data('../data/ECGO/all_feature.pkl', feature_num)
+data_df = load_data('../data/EGCO/all_feature.pkl', feature_num)
 if DEBUG:
     data_df = data_df.iloc[0:1000, :]
-with open('../EnglighMaterial_all.pkl', 'rb') as f:
+with open('../data/EGCO/EnglighMaterial_all.pkl', 'rb') as f:
     english_matrial = pd.DataFrame(pickle.load(f))
 
 save_dir = '/data3/zyx/project/eye_nlp/trained_model/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
@@ -92,7 +92,7 @@ loss_func = nn.MSELoss()
 h_state = None  # for initial hidden state
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=6, gamma=0.1)
 train(model=rnn,
-      epoch_num=20,
+      epoch_num=100,
       start_epoch=0,
       optimizer=optimizer,
       criterion=loss_func,

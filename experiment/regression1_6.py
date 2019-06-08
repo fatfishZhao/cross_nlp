@@ -28,20 +28,20 @@ def normalize_fea(old_df, fea_num):
     new_df.iloc[:, -fea_num:] = new_fea
     return new_df
 
-def load_data(fea_path = '../data/ECGO/feature.pkl'):
+def load_data(fea_path, fea_num):
     with open(fea_path, 'rb') as f:
         fea_df = pd.DataFrame(pickle.load(f))
     fea_df = fea_df.replace('.', 0)
     fea_df = fea_df.dropna()
     fea_df = normalize_time(old_df=fea_df)
-    fea_df = normalize_fea(old_df=fea_df, fea_num=9)
+    fea_df = normalize_fea(old_df=fea_df, fea_num=fea_num)
 
-    fea_df = fea_df[['WORD_TOTAL_READING_TIME','WORD']+list(fea_df.columns)[-9:]]
+    fea_df = fea_df[['WORD_TOTAL_READING_TIME','WORD']+list(fea_df.columns)[-fea_num:]]
 
     data_Y = fea_df.iloc[:,0].values
     data_X = fea_df.iloc[:,2:].values
     return data_X, data_Y
-data_X, data_Y = load_data('../data/ECGO/feature.pkl')
+data_X, data_Y = load_data('../data/EGCO/all_feature.pkl', fea_num=11)
 regr = linear_model.LinearRegression()
 linear_scores = cross_validation.cross_val_score(regr, data_X, data_Y, scoring='neg_mean_squared_error', cv=10)
 print('Linear Regression score:', np.sqrt(-linear_scores.mean()))
